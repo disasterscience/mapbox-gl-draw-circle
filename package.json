@@ -24,9 +24,6 @@
     "@turf/helpers": "^6.1.4",
     "@turf/length": "^6.0.2"
   },
-  "devDependencies": {
-    "jest": "^24.5.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/iamanvesh/mapbox-gl-draw-circle"
