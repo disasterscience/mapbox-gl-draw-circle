@@ -1,0 +1,27 @@
+name: copy
+
+on:
+  push:
+    branches:
+      - 'main'
+  release:
+    types: [edited, released]
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copycat
+      uses: disasterscience/copycat-action@main # forked
+      with:
+        dst_owner: disasterscience-a
+        dst_repo_name: mapbox-gl-draw-circle
+        src_path: /.
+        dst_path: /.
+        src_branch: main
+        dst_branch: main
+        clean: true
+        username: sciencebot
+        email: 94876829+sciencebot@users.noreply.github.com
+        commit_message: Update from upstream (disasterscience/mapbox-gl-draw-circle:main)
+        personal_token: ${{ secrets.SCIENCEBOT_TOKEN }}
