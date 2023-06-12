@@ -9,4 +9,4 @@
 // import * as CircleMode from './lib/modes / CircleMode';
 import DragCircleMode from './lib/modes/DragCircleMode';
 
-export default { DragCircleMode };
+export default DragCircleMode;
