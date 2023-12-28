@@ -2,11 +2,14 @@
   "name": "mapbox-gl-draw-circle",
   "version": "1.1.2",
   "description": "A module to draw a circle using mapbox-gl-draw",
-  "main": "index",
+  "main": "dist/mapbox-gl-draw-circle.js",
+  "browser": "dist/mapbox-gl-draw-circle.js",
   "scripts": {
-    "test": "jest --all",
-    "coverage": "jest --all --coverage"
+    "build": "rollup -c"
   },
+  "files": [
+    "dist/mapbox-gl-draw-circle*"
+  ],
   "keywords": [
     "mapbox",
     "geojson",
@@ -18,11 +21,12 @@
   "license": "MIT",
   "dependencies": {
     "@mapbox/mapbox-gl-draw": "file:../mapbox-gl-draw",
-    "@turf/along": "^6.0.1",
-    "@turf/circle": "^6.0.1",
-    "@turf/distance": "^6.0.1",
-    "@turf/helpers": "^6.1.4",
-    "@turf/length": "^6.0.2"
+    "@turf/along": "^6.5.0",
+    "@turf/circle": "^6.5.0",
+    "@turf/distance": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "@turf/length": "^6.5.0",
+    "rollup": "^2.79.0"
   },
   "repository": {
     "type": "git",
